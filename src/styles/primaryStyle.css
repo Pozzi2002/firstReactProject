@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Left side */
+nav {
+  display: flex;
+  align-items: center;
+  height: 12vh;
+  background-color: #000000;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+} 
+nav h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Courier New';
+  padding-left: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 88vh;
+}
+section {
+    border-right: 1px solid black
+}
+.leftSide {
+  overflow: auto;
+}
+.leftSide div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.leftSide div h2 {
+    padding-left: 1rem;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+}
+.leftSide div input {
+    display: block;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+.leftSide div input:hover,
+:focus {
+  box-shadow: inset 1px 1px 3px black;
+}
+.leftSide div label {
+    display: block;
+    color: rgb(46, 46, 46);
+    font-size: 1.2rem;
+    position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1.3rem;
+}
+.address {
+    flex-direction: column;
+    grid-column: 1 / 3;
+}
+#address {
+    width: 100%;
+    position: relative;
+    grid-column: 1 / 3;
+}
+.hideBtn {
+    max-height: max-content;
+    max-width: max-content;
+    margin-right: 1rem;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 1rem;
+}
+.submit {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.submit:active {
+  transform: scale(0.9);
+}
+
+.hideBtn.up .arrow {
+    transform: rotate(180deg);
+}
+.arrow {
+    width: 2rem;
+    transition: transform 0.2s;
+}
+path {
+    user-select: none;
+}
+.descriptionEd {
+    display: block;
+    grid-column: 1/3;
+}
+.responsibilities {
+    display: block;
+    grid-column: 1/3; 
+}
+.leftSide div textarea {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+.leftSide div textarea:hover,
+:focus {
+  box-shadow: inset 1px 1px 3px black;
+}
+
+/*Right side */
+aside {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paper {
+ background-color: #ffffff;
+ min-height: 120%;
+ min-width: 90%;
+ margin-top: 10rem;
+ margin-bottom: 1rem;
+ box-shadow: 1px 3px 5px black;
+}
+
+.paper h1 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.paper hr {
+  height: 4px;
+  background-color: black;
+  transform: skewY(-5deg) translateY(-30px);
+}
+.paper div {
+  margin: 1rem;
+}
+.paper div h2 {
+  background-color: rgb(13, 13, 13);
+  width: max-content;
+  padding: 5px;
+  color: rgb(232, 232, 232);
+}
+.paper div p {
+  font-size: 1.2rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
